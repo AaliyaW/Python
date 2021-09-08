@@ -126,6 +126,10 @@ if __name__ == "__main__":
         elif 'open tinkercad' in query:
             webbrowser.open("https://www.tinkercad.com")
             speak("tinkercad opened")
+            
+        elif 'open nykaa' in query:
+            webbrowser.open("https://www.nykaa.com")
+            speak("nykaa opened")
 
         elif 'the time' in query:
             strTime = datetime.datetime.now().strftime("%H:%M:%S")    
@@ -140,7 +144,7 @@ if __name__ == "__main__":
                 speak("Email has been sent!")
             except Exception as e:
                 print(e)
-                speak("Sorry. I am not able to send this email")    
+                speak("Sorry, I am not able to send this email")    
 
         elif 'the weather' in query:
                 api_address = 'https://api.openweathermap.org/data/2.5/weather?q=Sydney,au&appid=a10fd8a212e47edf8d946f26fb4cdef8&q='
@@ -163,9 +167,9 @@ if __name__ == "__main__":
             speak("Your IP location is "+city+" With cordinates "+loc)
 
         elif 'quit' in query:
-            speak("Goodbye, have a nice day")
+            speak("Goodbye, have a good day")
             exit()
 
         elif 'stop' in query:
-            speak("Goodbye, have a nice day")
+            speak("Goodbye, have a good day")
             exit()
